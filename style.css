@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+:root{
+    --blue_grey:rgb(118, 137, 139);
+    --light_blue_grey:rgb(121, 153, 157);
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: 80%;
+    max-height: 500px;
+}
+
+.show{
+    height: 10%;
+    width: 100%;
+
+}
+.answer{
+    height: 10%;
+    width: 100%;
+
+}
+
+/* responsible for the number and signs */
+.action_box{
+    height: 80%;
+    width: 100%;
+    display:flex;
+
+}
+
+.num_box{
+   
+height: 100%;
+width: 80%;
+overflow-x:hidden ;
+background-color:var(--blue_grey);
+display: grid;
+gap: 10px;
+grid-template-columns: repeat(3, 32.1%) ;
+
+}
+
+.nums,.signs_box{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.signs_box:hover{
+    border: 0.1px solid white;
+}
+.nums:hover{
+    border: 0.5px solid white;
+}
+
+.signs{
+    height: 100%;
+    width: 20%;
+    display: grid;
+    grid-template-rows:repeat(5,20%) ;
+}
+
+.signs_box{
+    background-color:var(--light_blue_grey);
+    font-size: 25px;
+}
